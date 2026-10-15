@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F7FB">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сложение двух чисел"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#172554"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Первое число"
+        android:textSize="16sp"
+        android:textColor="#334155"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/numA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Например, 2.5"
+        android:inputType="numberDecimal|numberSigned"
+        android:digits="0123456789.,-"
+        android:singleLine="true"
+        android:padding="14dp"
+        android:backgroundTint="#64748B"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Второе число"
+        android:textSize="16sp"
+        android:textColor="#334155"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/numB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Например, 3.7"
+        android:inputType="numberDecimal|numberSigned"
+        android:digits="0123456789.,-"
+        android:singleLine="true"
+        android:padding="14dp"
+        android:backgroundTint="#64748B"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сложить"
+        android:textSize="18sp"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результат появится здесь"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#166534"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
